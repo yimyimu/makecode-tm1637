@@ -1,7 +1,7 @@
 {
     "name": "Four Digit Display (TM1637)",
-    "version": "1.0.1",
-    "description": "Extension for dxxztoys DigitalTube",
+    "version": "1.0.2",
+    "description": "电学小子四位数码管",
     "license": "MIT",
     "dependencies": {
         "core": "*"
