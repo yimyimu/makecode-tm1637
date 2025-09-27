@@ -173,13 +173,29 @@ namespace TM1637 {
          * @param bit is the position, eg: 1
          * @param show is show/hide dp, eg: true
          */
-        //% blockId="TM1637_showDP" block="%tm|在第 %bit|位显示点 %show"
-        //% weight=70 blockGap=8
-        //% parts="TM1637"
-        showDP(bit: number = 1, show: boolean = true) {
+        _showDP(bit: number = 1, show: boolean = true) {
             bit = bit % this.count
             if (show) this._dat(bit, this.buf[bit] | 0x80)
             else this._dat(bit, this.buf[bit] & 0x7F)
+        }
+        /**
+         * show clock point
+         */
+        //% blockId="TM1637_showClockPoint" block="%tm|显示时钟点"
+        //% weight=70 blockGap=8
+        //% parts="TM1637"
+        showClockPoint() {
+            this._showDP(1, true);
+        }
+
+        /**
+         * hide clock point
+         */
+        //% blockId="TM1637_hideClockPoint" block="%tm|隐藏时钟点"
+        //% weight=70 blockGap=8
+        //% parts="TM1637"
+        hideClockPoint() {
+            this._showDP(1, false);
         }
 
         /**

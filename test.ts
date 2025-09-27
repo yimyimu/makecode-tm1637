@@ -7,8 +7,10 @@ DigitalPin.P14,
 7,
 4
 )
-tm.showNumber(1234)
-tm.showDP(1, true)
+tm.showNumber(1234);
+// tm.showDP(1, true)
+tm.showClockPoint();
+tm.hideClockPoint();
 tm.intensity(2)
 basic.pause(1000)
 tm.intensity(8)

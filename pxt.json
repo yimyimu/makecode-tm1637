@@ -1,6 +1,6 @@
 {
-    "name": "DxxzDigitalTube",
-    "version": "1.0.0",
+    "name": "Four Digit Display (TM1637)",
+    "version": "1.0.1",
     "description": "Extension for dxxztoys DigitalTube",
     "license": "MIT",
     "dependencies": {
